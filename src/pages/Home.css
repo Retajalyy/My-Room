@@ -1,0 +1,129 @@
+.home {
+  position: relative;
+  height: 100vh;
+  background: #f3e3d3;
+}
+
+.room-wrap {
+  position: absolute;
+  inset: 0;              /* fills the whole section */
+}
+
+
+/* ---------- label cards ---------- */
+
+.tag {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.tag-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.tag-line line {
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.tag-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+}
+
+.tag-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 28px 12px 14px;
+  background: #fcf0e6;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(140, 90, 80, 0.18);
+  text-decoration: none;
+  white-space: nowrap;
+  pointer-events: auto;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tag-card.left {
+  transform: translate(-100%, -50%);
+}
+.tag-card.right {
+  transform: translate(0, -50%);
+}
+.tag-card.left:hover {
+  transform: translate(-100%, calc(-50% - 4px));
+}
+.tag-card.right:hover {
+  transform: translate(0, calc(-50% - 4px));
+}
+.tag-card:hover {
+  box-shadow: 0 14px 34px rgba(140, 90, 80, 0.28);
+}
+
+.tag-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.tag-icon.light {
+  background: #ecc3c8;
+  color: #9c4a63;
+}
+
+.tag-icon.dark {
+  background: #c58b98;
+  color: #fff;
+}
+
+.tag-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora", serif;
+}
+
+.tag-text strong {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #5e1f36;
+}
+
+.tag-text small {
+  font-size: 0.88rem;
+  color: #b0707f;
+}
+
+@media (max-width: 700px) {
+  .tag-card {
+    padding: 8px 16px 8px 10px;
+    gap: 9px;
+  }
+  .tag-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .tag-text strong {
+    font-size: 0.95rem;
+  }
+  .tag-text small {
+    font-size: 0.7rem;
+  }
+}
+

@@ -1,0 +1,14 @@
+.home {
+  position: relative;
+  height: 100vh;
+  min-height: 560px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 52%, #f9efe3 0%, #f3e5d4 55%, #ead8c4 100%);
+}
+
+/* the 3D canvas sits below the 70px navbar */
+.room-wrap {
+  position: absolute;
+  inset: 70px 0 0 0;
+}
+
