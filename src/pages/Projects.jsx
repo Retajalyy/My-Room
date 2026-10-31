@@ -1,21 +1,16 @@
 import "./Projects.css";
 
-/* ---------- EDIT YOUR PROJECTS HERE ----------
-   image: optional. Save the picture in public/projects/ and write
-          the path like "/projects/my-app.png". Leave "" for a colored placeholder.
-   live / code: your links. Leave "" to hide a button.
--------------------------------------------------- */
 
 const projects = [
   {
-    title: "Academia",
+    title: "Codesyy",
     year: "2026",
     description:
-      "A Complete university admission system from admission to graduation....",
-    tags: ["Flutter", "Dart", "Supbase"],
-  video: "/Academia.MP4",
-    live: "",
-    code: "",
+      "Full-stack MERN website for Codesyy, a live online coding academy for kids aged 6–17, with course browsing and free-trial booking.",
+    tags: ["React", "NodeJS", "MongoDB","ExpressJS"],
+ image: "./draft logo 3.png",
+    live: "https://codesyy.vercel.app/",
+    code: "https://github.com/Retajalyy/Codesyy",
   },
   {
     title: "Project Two",
